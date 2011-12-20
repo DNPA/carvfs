@@ -1,0 +1,24 @@
+The CarvFS filesystem  has the following prerequisites:
+
+* cmake.
+* libcarvpath development files
+* fuse development files.
+
+To build the user space filesystem run:
+
+  cmake src
+  make
+
+To install the user space filesystem use the following command:
+
+  sudo make install
+
+
+This version of LibCarvPath has been tested to run on 64 bit x86 linux.
+There should however be no reason why it should not run just as well on 
+other systems that support FUSE.
+
+Note: There is also a 'configure' file. "DON'T USE IT". Its there only for people who don't
+      read files like this one, so they have a good change of getting everything build when
+      blindly using 'configure','make','sudo make install'. This subproject uses the cmake
+      build system.

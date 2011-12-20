@@ -1,0 +1,19 @@
+Version 0.3.0 :	
+	* Support for multi part raw images (dd).
+	* symlinkexport.pl script to make a minimum disk usage export of a disk image.
+	* upgraded the sleuthkit patchset to the 2.09 version of sleuthkit.
+	* some icat-cp patches for NTFS.
+	* fixed a bug in fragment handling. 
+	* removed xml creation requirements from the loadable module interface.
+	* added the isisfs carvpath filesystem for repositories.
+Version 0.5.0:
+        * Removed depricated OCFA coupling.
+        * Added support for growing archives.
+        * Removed isisfs carvpath filesystem for repositories (replaced by growing archive support)
+        * Made carvfs auto flatten nested carvpaths by making them into symbolic links to the flattened carvpath.
+Version 1.0.0:
+        * Moved from autotools to cmake build system.
+        * Removed old unused ocfa integration stuff.
+Version 1.0.1:
+	* Fixes to the build process of libmodraw
+	* Added the 'blkdev' module for CarvFS access to block devices.
