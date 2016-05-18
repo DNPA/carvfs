@@ -285,7 +285,7 @@ static int carvfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
           fileok=1;
 	}
 	else if (strncmp(path,"/CarvFS/",8) == 0) { //Other valid dirs only exist under the top level carvpath dir.
-           char *relpath=path+8;
+           const char *relpath=path+8;
            carvpath_entity *parsedpath=carvpath_parse(carvpath_top,relpath,CARVPATH_OOR_FAIL);
 	   if (parsedpath) { //If the relative path is a parsable carvpath, than the dir exists.
              carvpath_free(parsedpath,0);
